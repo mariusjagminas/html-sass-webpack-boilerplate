@@ -36,37 +36,18 @@ The development server will open the browser automatically and you should see yo
 
 ## Folders structure
 
-- All `*.html` files should be placed directly in `dist/` folder.
-- Images and other static files that don't need to be processed with webpack should be placed in `dist/static` folder.
-- `*.js` development files in `src/js` folder.
-- `*.scss` and `*.css` files in `src/styles` folder.
-- Fonts, images which are used in css as `url('')` must be placed in `src/assets` folder.
-
-### Example
+The development file should be placed in a folder according to its type.
 
 ```
-root
-│
-├── dist
-│   ├── index.html
-│   └── static
-│        └── image.png
-├── src
-│   │
-│   ├── assets
-│   │   ├── background.svg
-│   │   └── Lato-bold.woff
-│   │
-│   ├── js
-│   │   ├── app.js
-│   │   └── index.js
-│   │
-│   └── styles
-│       ├── _base.scss
-│       ├── _variable.scss
-│       └── main.scss
-│
-other root files ...
+ src
+ |
+ ├── assets // Images, fonts and icons.
+ |
+ ├── js // All JavaScript files.
+ |
+ ├── styles // SASS, CSS files.
+ |
+ └── templates // HTML files.
 ```
 
 ## Build
@@ -91,4 +72,4 @@ $ npm run serve
 $ npm run format
 ```
 
-The files `*.js` and `*.scss` in `src/` folder, and `*.html` files in `dist/` folder will be formatted with [Prettier](https://prettier.io/)
+The development files in `src/` folder will be formatted with [Prettier](https://prettier.io/)
